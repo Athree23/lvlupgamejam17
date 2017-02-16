@@ -1,5 +1,33 @@
-
-
-satan/Temp/UnityLockfile
-
-priest/Temp/UnityLockfile
+# Unity generated #
+# =============== #
+priest/[Tt]emp/
+priest/[Oo]bj/
+priest/[Bb]uild
+priest/[Ll]ibrary/
+priest/sysinfo.txt
+*.stackdump
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+priest/ProjectSettings/ClusterInputManager.asset
+priest/ProjectSettings/UnityConnectSettings.asset
