@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{14AC135A-5414-28B9-DD74-3D706C140377}</ProjectGuid>
+    <ProjectGuid>{97A42B6E-68F7-5EDB-92CA-1372637CAA12}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -114,13 +114,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="priest.CSharp.Plugins.csproj">
-      <Project>{C8EF730A-1E19-B615-FC7B-856B1FA8029C}</Project>
-      <Name>priest.CSharp.Plugins</Name>
+    <ProjectReference Include="priest.Plugins.csproj">
+      <Project>{47755256-DB75-DAB0-08EF-D422F02C6FD6}</Project>
+      <Name>priest.Plugins</Name>
     </ProjectReference>
-    <ProjectReference Include="priest.CSharp.csproj">
-      <Project>{772E0FCB-4863-4A43-80D8-6C782BB92241}</Project>
-      <Name>priest.CSharp</Name>
+    <ProjectReference Include="priest.csproj">
+      <Project>{D439F582-D4EB-04C3-382E-05C3301C6297}</Project>
+      <Name>priest</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -129,5 +129,6 @@
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>
