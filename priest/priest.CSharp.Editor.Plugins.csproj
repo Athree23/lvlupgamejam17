@@ -118,6 +118,10 @@
       <Project>{C8EF730A-1E19-B615-FC7B-856B1FA8029C}</Project>
       <Name>priest.CSharp.Plugins</Name>
     </ProjectReference>
+    <ProjectReference Include="priest.CSharp.csproj">
+      <Project>{772E0FCB-4863-4A43-80D8-6C782BB92241}</Project>
+      <Name>priest.CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
