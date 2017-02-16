@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest.CSharp.Plugins", "priest.CSharp.Plugins.csproj", "{C8EF730A-1E19-B615-FC7B-856B1FA8029C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest.CSharp", "priest.CSharp.csproj", "{772E0FCB-4863-4A43-80D8-6C782BB92241}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest.CSharp.Editor.Plugins", "priest.CSharp.Editor.Plugins.csproj", "{14AC135A-5414-28B9-DD74-3D706C140377}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{C8EF730A-1E19-B615-FC7B-856B1FA8029C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8EF730A-1E19-B615-FC7B-856B1FA8029C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8EF730A-1E19-B615-FC7B-856B1FA8029C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772E0FCB-4863-4A43-80D8-6C782BB92241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772E0FCB-4863-4A43-80D8-6C782BB92241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772E0FCB-4863-4A43-80D8-6C782BB92241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772E0FCB-4863-4A43-80D8-6C782BB92241}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14AC135A-5414-28B9-DD74-3D706C140377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14AC135A-5414-28B9-DD74-3D706C140377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14AC135A-5414-28B9-DD74-3D706C140377}.Release|Any CPU.ActiveCfg = Release|Any CPU
