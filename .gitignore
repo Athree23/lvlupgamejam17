@@ -35,3 +35,5 @@ priest/ProjectSettings/UnityConnectSettings.asset
 priest/Library/shadercompiler-UnityShaderCompiler\.exe0\.log
 
 priest/Library/assetDatabase3
+
+*.log
