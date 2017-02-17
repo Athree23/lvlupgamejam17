@@ -16,7 +16,7 @@ public class PriestAttack : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.GetComponent<PlayerPrefs>();
+        playerHealth = player.GetComponent<PlayerHealth>();
         priestHealth = GetComponent<PriestHealth>();
         anim = GetComponent<Animator>();
 		

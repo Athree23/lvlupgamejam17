@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PriestHealth : MonoBehaviour {
 
-    public int startingHealth = 100;
-    public int currentHealth;
+    public float startingHealth = 100f;
+    public float currentHealth;
     public AudioClip deathClip;
 
 
@@ -30,7 +30,7 @@ public class PriestHealth : MonoBehaviour {
 		
 	}
 
-    public void TakeDamage ( int amount)
+    public void TakeDamage (float amount)
     {
         if(isDead)
         {
@@ -45,7 +45,7 @@ public class PriestHealth : MonoBehaviour {
         hitParticles.Play();
 
         //if is dead
-        if(currentHealth <= 0)
+        if(currentHealth <= 0f)
         {
             Death();
         }
