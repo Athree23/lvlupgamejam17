@@ -46,11 +46,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\FireBallMover.cs" />
      <Compile Include="Assets\Scripts\GameControls.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PriestAttack.cs" />
+     <Compile Include="Assets\Scripts\PriestHealth.cs" />
      <Compile Include="Assets\Scripts\PriestMovement.cs" />
+     <Compile Include="Assets\Scripts\candlelight.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
