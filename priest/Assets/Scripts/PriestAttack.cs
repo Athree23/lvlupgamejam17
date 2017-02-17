@@ -52,7 +52,7 @@ public class PriestAttack : MonoBehaviour {
         //if playerDead set the anim
         if(playerHealth.currentHealth <= 0)
         {
-            anim.SetTrigger("PlayerDead");
+            //anim.SetTrigger("PlayerDead");
         }
 		
 	}

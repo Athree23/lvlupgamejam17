@@ -16,9 +16,9 @@ public class PriestHealth : MonoBehaviour {
     bool isDead;
 	// Use this for initialization
 	void Start () {
-        anim = GetComponent<Animator>();
-        enemyAudio = GetComponent<AudioSource>();
-        hitParticles = GetComponentInChildren<ParticleSystem>();
+        //anim = GetComponent<Animator>();
+        //enemyAudio = GetComponent<AudioSource>();
+        //hitParticles = GetComponentInChildren<ParticleSystem>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
 
         currentHealth = startingHealth;
@@ -32,17 +32,19 @@ public class PriestHealth : MonoBehaviour {
 
     public void TakeDamage (float amount)
     {
+
+        print("took " + amount + " damage");
         if(isDead)
         {
             return;
         }
-        enemyAudio.Play();  //sound for damage taken
+        //enemyAudio.Play();  //sound for damage taken
 
         currentHealth -= amount;
 
-        hitParticles.transform.position = transform.position;
+        //hitParticles.transform.position = transform.position;
 
-        hitParticles.Play();
+        //hitParticles.Play();
 
         //if is dead
         if(currentHealth <= 0f)
@@ -59,9 +61,10 @@ public class PriestHealth : MonoBehaviour {
         //turn the collider into a trigger so shots can pass
         capsuleCollider.isTrigger = true;
 
-        anim.SetTrigger("Dead");
+        Destroy(gameObject);
+        //anim.SetTrigger("Dead");
 
-        enemyAudio.clip = deathClip;
-        enemyAudio.Play();
+        //enemyAudio.clip = deathClip;
+        //enemyAudio.Play();
     }
 }
