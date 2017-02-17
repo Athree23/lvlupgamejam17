@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\PriestMovement.cs" />
     <Compile Include="Assets\Scripts\candlelight.cs" />
   </ItemGroup>
   <ItemGroup>
