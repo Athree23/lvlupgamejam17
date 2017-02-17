@@ -14,30 +14,31 @@ public class PriestMovement : MonoBehaviour
     //speed to move
     public float speed;
     public float rotationSpeed;
-<<<<<<< HEAD
+
     bool facingLeft = false;
     private Rigidbody2D m_Rigidbody2D;
 
 
-=======
->>>>>>> 8ae8205af0ab981de5b8e4954d75297990abfeee
-
     // Use this for initialization
     void Start()
     {
-<<<<<<< HEAD
         print("test");
         //Looking for object with tag "player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-=======
+
+        //Looking for object with tag "player"
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        m_Rigidbody2D = GetComponent<Rigidbody2D>();
+
         //Looking for object with tag "player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
->>>>>>> 8ae8205af0ab981de5b8e4954d75297990abfeee
         //priest = GameObject.FindGameObjectWithTag("priest").transform;
 
 
+
+        //priest = GameObject.FindGameObjectWithTag("priest").transform;
     }
 
     // Update is called once per frame
@@ -48,7 +49,6 @@ public class PriestMovement : MonoBehaviour
         range = Vector2.Distance(transform.position, player.position);
         if (range <= 10f)
         {
-<<<<<<< HEAD
             Vector2 targetDir = new Vector2(player.position.x- transform.position.x, 0);
             print(targetDir);
             //target at the left
@@ -62,9 +62,6 @@ public class PriestMovement : MonoBehaviour
             //transform.position = Vector2.MoveTowards(transform.position, targetDir.normalized, speed * Time.deltaTime);
 
             m_Rigidbody2D.velocity = new Vector2(targetDir.normalized.x*speed , m_Rigidbody2D.velocity.y);
-=======
->>>>>>> 8ae8205af0ab981de5b8e4954d75297990abfeee
-
             //transform.position += transform.forward * speed*Time.deltaTime;
         }
     }
@@ -77,27 +74,6 @@ public class PriestMovement : MonoBehaviour
         transform.localScale = theScale;
     }
 
-        /* player = GameObject.FindGameObjectWithTag("Player").transform;
-
-         range = Vector2.Distance(transform.position, player.position);
-         Vector3 targetHeading = player.position - transform.position;
-         Vector3 targetDir = targetHeading.normalized;
-
-         //rotate to look at the player
-         transform.rotation = Quaternion.LookRotation(targetDir), rotationSpeed*Time.deltaTime;
-         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-
-         transform.position += transform.forward * Speed * Time.deltaTime;       
-
-         if (range <= 10f)
-         {
-             transform.Translate(Vector2.MoveTowards(transform.position, player.position, range).normalized * Speed * Time.deltaTime);
-         }
-         */
-
-
-<<<<<<< HEAD
-=======
 
         /* player = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -117,7 +93,5 @@ public class PriestMovement : MonoBehaviour
          }
          */
 
-
-    }
->>>>>>> 8ae8205af0ab981de5b8e4954d75297990abfeee
+       
 }
