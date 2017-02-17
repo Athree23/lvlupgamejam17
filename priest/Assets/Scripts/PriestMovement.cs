@@ -14,13 +14,18 @@ public class PriestMovement : MonoBehaviour
     //speed to move
     public float speed;
     public float rotationSpeed;
+    bool facingLeft = false;
+    private Rigidbody2D m_Rigidbody2D;
+
+
 
     // Use this for initialization
     void Start()
     {
+        print("test");
         //Looking for object with tag "player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        m_Rigidbody2D = GetComponent<Rigidbody2D>();
         //priest = GameObject.FindGameObjectWithTag("priest").transform;
 
 
@@ -34,12 +39,31 @@ public class PriestMovement : MonoBehaviour
         range = Vector2.Distance(transform.position, player.position);
         if (range <= 10f)
         {
+            Vector2 targetDir = new Vector2(player.position.x- transform.position.x, 0);
+            print(targetDir);
+            //target at the left
+            if((targetDir.x < 0f && !facingLeft) || (targetDir.x > 0f && facingLeft))
+            {
+                flip();
+            }
+            //transform.rotation = Quaternion.LookRotation(targetDir);
 
-            Vector2 targetDir = new Vector2(player.position.x, transform.position.x).normalized;
-            transform.position = Vector2.MoveTowards(transform.position, targetDir, speed * Time.deltaTime);
+            //seems working but not perfectly
+            //transform.position = Vector2.MoveTowards(transform.position, targetDir.normalized, speed * Time.deltaTime);
+
+            m_Rigidbody2D.velocity = new Vector2(targetDir.normalized.x*speed , m_Rigidbody2D.velocity.y);
+
             //transform.position += transform.forward * speed*Time.deltaTime;
         }
-
+    }
+    void flip()
+    {
+        print(" rotating");
+        facingLeft = !facingLeft;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
 
         /* player = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -60,5 +84,4 @@ public class PriestMovement : MonoBehaviour
          */
 
 
-    }
 }
