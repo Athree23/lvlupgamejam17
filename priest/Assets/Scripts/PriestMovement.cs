@@ -31,7 +31,8 @@ public class PriestMovement : MonoBehaviour {
         range = Vector2.Distance(transform.position, player.position);
         if(range <= 10f)
         {
-            Vector2 targetDir = new Vector2(player.position.x, transform.position.y).normalized;
+
+            Vector2 targetDir = new Vector2(player.position.x, transform.position.x).normalized;
             transform.position = Vector2.MoveTowards(transform.position, targetDir, speed * Time.deltaTime);
             //transform.position += transform.forward * speed*Time.deltaTime;
         }
