@@ -15,16 +15,6 @@ public class PriestMovement : MonoBehaviour
     public float speed;
     public float rotationSpeed;
 
-<<<<<<< HEAD
-    // Use this for initialization
-    void Start()
-    {
-        //Looking for object with tag "player"
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-
-        //priest = GameObject.FindGameObjectWithTag("priest").transform;
-
-=======
     bool facingLeft = false;
     private Rigidbody2D m_Rigidbody2D;
 
@@ -45,7 +35,6 @@ public class PriestMovement : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         //priest = GameObject.FindGameObjectWithTag("priest").transform;
->>>>>>> master
 
 
 
@@ -60,8 +49,6 @@ public class PriestMovement : MonoBehaviour
         range = Vector2.Distance(transform.position, player.position);
         if (range <= 10f)
         {
-<<<<<<< HEAD
-=======
             Vector2 targetDir = new Vector2(player.position.x- transform.position.x, 0);
             print(targetDir);
             //target at the left
@@ -70,7 +57,6 @@ public class PriestMovement : MonoBehaviour
                 flip();
             }
             //transform.rotation = Quaternion.LookRotation(targetDir);
->>>>>>> master
 
             //seems working but not perfectly
             //transform.position = Vector2.MoveTowards(transform.position, targetDir.normalized, speed * Time.deltaTime);
@@ -107,29 +93,5 @@ public class PriestMovement : MonoBehaviour
          }
          */
 
-<<<<<<< HEAD
-
-        /* player = GameObject.FindGameObjectWithTag("Player").transform;
-
-         range = Vector2.Distance(transform.position, player.position);
-         Vector3 targetHeading = player.position - transform.position;
-         Vector3 targetDir = targetHeading.normalized;
-
-         //rotate to look at the player
-         transform.rotation = Quaternion.LookRotation(targetDir), rotationSpeed*Time.deltaTime;
-         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-
-         transform.position += transform.forward * Speed * Time.deltaTime;       
-
-         if (range <= 10f)
-         {
-             transform.Translate(Vector2.MoveTowards(transform.position, player.position, range).normalized * Speed * Time.deltaTime);
-         }
-         */
-
-
-    }
-=======
        
->>>>>>> master
 }
