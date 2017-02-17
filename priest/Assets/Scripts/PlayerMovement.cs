@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+    private float spawnpoint_x = -3f;
+    private float spawnpoint_y = 0.5f;
+
     public int getDir()
     {
         return (m_FacingRight ? 1 : -1);
@@ -36,6 +39,12 @@ public class PlayerMovement : MonoBehaviour
         m_CeilingCheck = transform.Find("CeilingCheck");
         m_Anim = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        m_Rigidbody2D.transform.position = new Vector2(spawnpoint_x, spawnpoint_y);
+    }
+
+    public void respawn()
+    {
+        m_Rigidbody2D.transform.position = new Vector2(spawnpoint_x, spawnpoint_y);
     }
 
 
@@ -116,5 +125,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    public void setSpawnPoint(float x, float y)
+    {
+        this.spawnpoint_x = x;
+        this.spawnpoint_y = y;
     }
 }

@@ -20,6 +20,6 @@ public class candlelight : MonoBehaviour
     void LaunchProjectile()
     {
         candleLight.spotAngle = Random.Range(60, 70);
-        candleLight.intensity = Random.Range(2, 4);
+        candleLight.intensity = Random.Range(1, 3);
     }
 }
