@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< Updated upstream
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest.CSharp.Plugins", "priest.CSharp.Plugins.csproj", "{C8EF730A-1E19-B615-FC7B-856B1FA8029C}"
@@ -6,6 +7,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest.CSharp", "priest.CSharp.csproj", "{772E0FCB-4863-4A43-80D8-6C782BB92241}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest.CSharp.Editor.Plugins", "priest.CSharp.Editor.Plugins.csproj", "{14AC135A-5414-28B9-DD74-3D706C140377}"
+=======
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest", "Assembly-CSharp-firstpass.csproj", "{DBC85C28-F16A-9DDB-8891-4877577BC6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest", "Assembly-CSharp.csproj", "{68E4CC3D-9C7D-3B2F-E7A2-EA178CD7A3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priest", "Assembly-CSharp-Editor-firstpass.csproj", "{4F40F002-2224-6921-F340-FE037C7E18AF}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +23,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
 		{C8EF730A-1E19-B615-FC7B-856B1FA8029C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8EF730A-1E19-B615-FC7B-856B1FA8029C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8EF730A-1E19-B615-FC7B-856B1FA8029C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,6 +36,20 @@ Global
 		{14AC135A-5414-28B9-DD74-3D706C140377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14AC135A-5414-28B9-DD74-3D706C140377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14AC135A-5414-28B9-DD74-3D706C140377}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{DBC85C28-F16A-9DDB-8891-4877577BC6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC85C28-F16A-9DDB-8891-4877577BC6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC85C28-F16A-9DDB-8891-4877577BC6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC85C28-F16A-9DDB-8891-4877577BC6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E4CC3D-9C7D-3B2F-E7A2-EA178CD7A3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E4CC3D-9C7D-3B2F-E7A2-EA178CD7A3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E4CC3D-9C7D-3B2F-E7A2-EA178CD7A3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E4CC3D-9C7D-3B2F-E7A2-EA178CD7A3BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F40F002-2224-6921-F340-FE037C7E18AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F40F002-2224-6921-F340-FE037C7E18AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F40F002-2224-6921-F340-FE037C7E18AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F40F002-2224-6921-F340-FE037C7E18AF}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
