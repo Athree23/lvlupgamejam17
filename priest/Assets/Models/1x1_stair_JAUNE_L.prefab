@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 68827815140426258}
   m_Layer: 9
   m_Name: bloc_escalier
-  m_TagString: Untagged
+  m_TagString: World
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 212131704552933736}
   m_Layer: 9
   m_Name: 1x1_stair_JAUNE_L
-  m_TagString: Untagged
+  m_TagString: World
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

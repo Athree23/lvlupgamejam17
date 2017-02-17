@@ -8,6 +8,7 @@ TagManager:
   - checkpoint
   - FireBall
   - Boundary
+  - World
   layers:
   - Default
   - TransparentFX
