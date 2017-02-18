@@ -27,6 +27,7 @@ public class PriestAttack : MonoBehaviour {
         if(other.gameObject == player)
         {
             playerInRange = true;
+            anim.SetBool("attack", true);
         }
     }
 
@@ -36,6 +37,7 @@ public class PriestAttack : MonoBehaviour {
         if(collision.gameObject == player)
         {
             playerInRange = false;
+            anim.SetBool("attack", false);
         }
     }
 

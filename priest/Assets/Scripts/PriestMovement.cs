@@ -22,7 +22,6 @@ public class PriestMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        print("test");
         //Looking for object with tag "player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -33,12 +32,6 @@ public class PriestMovement : MonoBehaviour
 
         //Looking for object with tag "player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
-        //priest = GameObject.FindGameObjectWithTag("priest").transform;
-
-
-
-        //priest = GameObject.FindGameObjectWithTag("priest").transform;
     }
 
     // Update is called once per frame
