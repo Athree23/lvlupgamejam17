@@ -24,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
-    private float spawnpoint_x = -3f;
-    private float spawnpoint_y = 0.5f;
+    private float spawnpoint_x;
+    private float spawnpoint_y;
 
     public bool moving = false;
 
@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
         m_CeilingCheck = transform.Find("CeilingCheck");
         m_Anim = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        spawnpoint_x = m_Rigidbody2D.position.x;
+        spawnpoint_y = m_Rigidbody2D.position.y;
         m_Rigidbody2D.transform.position = new Vector2(spawnpoint_x, spawnpoint_y);
     }
 
