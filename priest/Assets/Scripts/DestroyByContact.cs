@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 ﻿using UnityEngine;
 using System.Collections;
 
@@ -14,27 +13,13 @@ public class DestroyByContact : MonoBehaviour
         {
             PriestHealth enemy = (PriestHealth)other.gameObject.GetComponent<PriestHealth>();
             if (enemy != null) enemy.TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
-    }
-=======
-﻿using UnityEngine;
-using System.Collections;
-
-public class DestroyByContact : MonoBehaviour
-{
-    public float damage = 10f;
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Boundary" || other.tag == "Player") return;
-
-        if (other.tag == "Enemy")
+        else if(other.tag == "World")
         {
-            PriestHealth enemy = (PriestHealth)other.gameObject.GetComponent<PriestHealth>();
-            if (enemy != null) enemy.TakeDamage(damage);
+            print("impact");
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
->>>>>>> Stashed changes
 }

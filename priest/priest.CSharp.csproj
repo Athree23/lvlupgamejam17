@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
+    <Compile Include="Assets\Scripts\Fading.cs" />
     <Compile Include="Assets\Scripts\FireBallMover.cs" />
     <Compile Include="Assets\Scripts\GameControls.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -95,6 +96,11 @@
     <Compile Include="Assets\Scripts\PriestAttack.cs" />
     <Compile Include="Assets\Scripts\PriestHealth.cs" />
     <Compile Include="Assets\Scripts\PriestMovement.cs" />
+    <Compile Include="Assets\Scripts\Sound\box.cs" />
+    <Compile Include="Assets\Scripts\Sound\chain.cs" />
+    <Compile Include="Assets\Scripts\Sound\jump.cs" />
+    <Compile Include="Assets\Scripts\Sound\walk.cs" />
+    <Compile Include="Assets\Scripts\Sound\water.cs" />
     <Compile Include="Assets\Scripts\candlelight.cs" />
     <Compile Include="Assets\Scripts\touchAndDie.cs" />
   </ItemGroup>

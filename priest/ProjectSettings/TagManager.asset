@@ -8,7 +8,7 @@ TagManager:
   - checkpoint
   - FireBall
   - Boundary
-  - World
+  - decor_movable
   layers:
   - Default
   - TransparentFX
@@ -24,7 +24,7 @@ TagManager:
   - 
   - Enemy
   - 
-  - 
+  - decor_movable
   - 
   - 
   - 
