@@ -68,6 +68,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void heal()
+    {
+        nAttemps++;
+    }
+
 
     void Death()
     {

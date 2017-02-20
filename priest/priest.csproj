@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\Sound\walk.cs" />
     <Compile Include="Assets\Scripts\Sound\water.cs" />
     <Compile Include="Assets\Scripts\candlelight.cs" />
+    <Compile Include="Assets\Scripts\fountain.cs" />
     <Compile Include="Assets\Scripts\lava.cs" />
     <Compile Include="Assets\Scripts\touchAndDie.cs" />
   </ItemGroup>
