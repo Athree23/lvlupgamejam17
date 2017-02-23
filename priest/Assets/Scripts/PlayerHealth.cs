@@ -37,6 +37,8 @@ public class PlayerHealth : MonoBehaviour
         if (damaged)
         {
             anim.SetBool("Damaged", true);
+            SpriteRenderer color = GetComponent<SpriteRenderer>();
+            color.color = Color.red;
             // ... set the colour of the damageImage to the flash colour.
             // damageImage.color = flashColour;
         }
@@ -44,6 +46,8 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             anim.SetBool("Damaged", false);
+            SpriteRenderer color = GetComponent<SpriteRenderer>();
+            color.color = Color.white;
             // ... transition the colour back to clear.
             // damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
         }
@@ -68,27 +72,31 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void heal()
-    {
-        nAttemps++;
-    }
 
-
-    void Death()
+    public void Death()
     {
         // Set the death flag so this function won't be called again.
         isDead = true;
         anim.SetTrigger("Die");
-
-        if(nAttemps > 0)
+        nAttemps--;
+        if (nAttemps > 0)
         {
             currentHealth = startingHealth;
             anim.SetTrigger("Respawn");
             isDead = false;
             playerMovement.respawn();
         }
+        else
+        {
+            Application.LoadLevel("gameOver");
+        }
 
-        nAttemps--;
+        
+    }
+
+    public void heal()
+    {
+        nAttemps++;
     }
 
     void updateHealthGUI()
@@ -98,7 +106,7 @@ public class PlayerHealth : MonoBehaviour
         Image life3 = GameObject.FindGameObjectWithTag("life3").GetComponent<Image>();
         Text attemps = GameObject.FindGameObjectWithTag("attemps").GetComponent<Text>();
 
-        attemps.text = nAttemps+" x ";
+        attemps.text = ""+nAttemps+" x ";
 
         if (currentHealth == startingHealth)
         {

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b52d5bbfc08a09b45b551e5d0814ae34
+timeCreated: 1487374542
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: So Wide
+  fontNames:
+  - So Wide
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

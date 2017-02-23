@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FireBall: {fileID: 1485271141820406, guid: 27204676d13a6de43abbbc192907d8df, type: 2}
   ShotSpawn: {fileID: 4777592962599246}
-  fireRate: 0.1
+  fireRate: 0.5
 --- !u!114 &114207310830219960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -338,8 +338,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d3be0cc430a5943aba0a00386a1b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 3
+  nAttemps: 3
   currentHealth: 0
+  life: {fileID: 21300000, guid: 78edc7d1efce30d429cd252dd607c49c, type: 3}
+  nolife: {fileID: 21300000, guid: b25a141c3347fd449b947512437ae5f3, type: 3}
 --- !u!114 &114793859184203116
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61973532580573210}
   - component: {fileID: 114370061813373146}
   - component: {fileID: 82793858200937062}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: blocEau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1949308739908796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.40510607, y: -1.3036339, z: 0}
+  m_LocalPosition: {x: -0.40510607, y: -1.3036339, z: 3.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -26,7 +26,7 @@ public class jump : MonoBehaviour {
 
             //audioSrc.Play();
 
-            float vol = Random.Range(0.1f, 0.2f);
+            float vol = Random.Range(0.2f, 0.4f);
 
             audioSrc.PlayOneShot(clip, vol);
             playonce = false;

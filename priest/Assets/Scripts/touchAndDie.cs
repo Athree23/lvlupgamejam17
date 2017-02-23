@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class touchAndDie : MonoBehaviour
 {
-    private PlayerMovement plyctrl;
+    private PlayerHealth plyhealth;
 
     private void Awake()
     {
@@ -19,10 +19,9 @@ public class touchAndDie : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        plyctrl = (PlayerMovement)other.gameObject.GetComponent<PlayerMovement>();
+        plyhealth = (PlayerHealth)other.gameObject.GetComponent<PlayerHealth>();
         if (other.tag == "Player")
-            plyctrl.respawn();
-
+            plyhealth.Death();
     }
 }
 

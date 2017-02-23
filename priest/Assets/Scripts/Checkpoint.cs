@@ -22,7 +22,12 @@ public class Checkpoint : MonoBehaviour {
     {
         plyctrl = (PlayerMovement)other.gameObject.GetComponent<PlayerMovement>();
         if (other.tag == "Player")
+        {
             plyctrl.setSpawnPoint(transform.position.x, transform.position.y);
+            SpriteRenderer color = GetComponent<SpriteRenderer>();
+            color.color = Color.green;
+        }
+            
 
     }
 }

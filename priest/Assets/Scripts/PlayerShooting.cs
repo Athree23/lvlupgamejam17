@@ -8,6 +8,7 @@ public class PlayerShooting : MonoBehaviour {
     public Transform ShotSpawn;
     public float fireRate;
     private float nextFire;
+    public AudioClip[] audioClip;
 
     void Update()
     {
@@ -15,6 +16,13 @@ public class PlayerShooting : MonoBehaviour {
         {
             nextFire = Time.time + fireRate;
             Instantiate(FireBall, ShotSpawn.position, ShotSpawn.rotation);
+            AudioClip clip = null;
+            AudioSource audioSrc = (AudioSource)gameObject.GetComponent<AudioSource>();
+
+            float vol = Random.Range(0.2f, 0.5f);
+            clip = audioClip[Random.Range(0, 1)];
+
+            audioSrc.PlayOneShot(clip, vol);
         }
     }
 }

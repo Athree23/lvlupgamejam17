@@ -51,7 +51,7 @@ public class walk : MonoBehaviour {
 
             //audioSrc.Play();
 
-            vol = Random.Range(0.2f, 0.7f);
+            vol = Random.Range(0.3f, 0.8f);
 
             audioSrc.PlayOneShot(clip, vol);
         }

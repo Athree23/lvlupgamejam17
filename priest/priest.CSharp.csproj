@@ -82,12 +82,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CameraFollowMenu1.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
     <Compile Include="Assets\Scripts\Fading.cs" />
     <Compile Include="Assets\Scripts\FireBallMover.cs" />
     <Compile Include="Assets\Scripts\GameControls.cs" />
+    <Compile Include="Assets\Scripts\Menu\endGame.cs" />
+    <Compile Include="Assets\Scripts\Menu\enterGame.cs" />
+    <Compile Include="Assets\Scripts\Menu\exitGame.cs" />
+    <Compile Include="Assets\Scripts\Menu\gameOver.cs" />
+    <Compile Include="Assets\Scripts\Menu\startGame.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -98,10 +104,13 @@
     <Compile Include="Assets\Scripts\PriestMovement.cs" />
     <Compile Include="Assets\Scripts\Sound\box.cs" />
     <Compile Include="Assets\Scripts\Sound\chain.cs" />
+    <Compile Include="Assets\Scripts\Sound\fire.cs" />
     <Compile Include="Assets\Scripts\Sound\jump.cs" />
     <Compile Include="Assets\Scripts\Sound\walk.cs" />
     <Compile Include="Assets\Scripts\Sound\water.cs" />
     <Compile Include="Assets\Scripts\candlelight.cs" />
+    <Compile Include="Assets\Scripts\fountain.cs" />
+    <Compile Include="Assets\Scripts\lava.cs" />
     <Compile Include="Assets\Scripts\touchAndDie.cs" />
   </ItemGroup>
   <ItemGroup>

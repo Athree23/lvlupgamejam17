@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class fountain : MonoBehaviour {
 
-    GameObject player;
-    PlayerHealth playerHealth;
+    private GameObject player;
+    private PlayerHealth playerHealth;
 
 	// Use this for initialization
 	void Start () {

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 91f05333e94e6224ebb043462e9d8348
+timeCreated: 1487374542
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: So Bad
+  fontNames:
+  - So Bad
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
